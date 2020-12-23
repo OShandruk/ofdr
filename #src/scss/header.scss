@@ -1,0 +1,108 @@
+//===================================================================================================
+.header__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0px 10px 0px;
+}
+.top-header {
+}
+.top-header__column {
+	&:nth-child(1) {
+		flex: 0 1 32%;
+		display: flex;
+		align-items: center;
+	}
+	&:last-child {
+		display: flex;
+		align-items: center;
+	}
+}
+.top-header__logo {
+	margin-right: 30px;
+}
+.top-header__logo-subtitle {
+	padding-left: 25px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: #5D5D5D;
+	border-left: 2px solid #89AFEF;
+
+}
+.top-header__social-list {
+	display: flex;
+	li {
+		margin-right: 18px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+.top-header__social-link {
+	position: relative;
+	border-radius: 50%;
+	display: block;
+	width: 43px;
+	height: 43px;
+}
+.whatsap__link {
+	background-color: #2DD038;
+	box-shadow: 2px 3px 17px -1px rgba(45,208,56,0.58);
+	&:after {
+		content:'';
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		background: url(../img/header/whatsapp-logo.svg) center no-repeat;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.viber__link {
+	background-color: #7B519D;
+	box-shadow: 2px 1px 17px -1px rgba(123,81,157,0.58);
+	&:after {
+		content:'';
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		background: url(../img/header/viber-logo.svg) center no-repeat;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.telegram__link {
+	background-color: #5BBAF0;
+	box-shadow: 2px 1px 17px -1px rgba(91,186,240,0.58);
+	&:after {
+		content:'';
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		background: url(../img/header/telegram.svg) center no-repeat;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.top-header__contact {
+	display: flex;
+	flex-direction: column;
+}
+.top-header__phone {
+	font-size: 20px;
+	font-weight: 700;
+	color:#333333;
+}
+.top-header__mail {
+}
+.top-header__button {
+}
+.button {
+}

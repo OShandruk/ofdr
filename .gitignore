@@ -1,0 +1,7 @@
+# Исключить все файлы с расширение json
+*.json
+# Исключить  gulpfile
+gulpfile.js
+
+# Игнорировать все файлы в директории node_modules/
+node_modules/
