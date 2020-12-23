@@ -2,7 +2,6 @@
 .header__top {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	padding: 10px 0px 10px 0px;
 }
 .top-header {
@@ -12,6 +11,7 @@
 		flex: 0 1 32%;
 		display: flex;
 		align-items: center;
+		margin-right: 50px;
 	}
 	&:last-child {
 		display: flex;
@@ -19,13 +19,13 @@
 	}
 }
 .top-header__logo {
-	margin-right: 30px;
+	margin-right: 26px;
 }
 .top-header__logo-subtitle {
-	padding-left: 25px;
+	padding-left: 21px;
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 18px;
 	color: #5D5D5D;
 	border-left: 2px solid #89AFEF;
 
@@ -94,15 +94,45 @@
 .top-header__contact {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-end;
+	margin-right: 30px;
 }
 .top-header__phone {
+	position: relative;
 	font-size: 20px;
 	font-weight: 700;
 	color:#333333;
+	padding-left: 30px;
+	margin-bottom: 5px;
+	&:before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 19px;
+		height: 19px;
+		background: url(../img/header/call-answer.svg) center no-repeat;
+	}
 }
 .top-header__mail {
+	position: relative;
+	font-weight: 500;
+	font-size: 17px;
+	color:#333333;
+	padding-left: 30px;
+	margin-bottom: 5px;
+	&:before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 19px;
+		height: 19px;
+		background: url(../img/header/mail.svg) center no-repeat;
+	}
 }
 .top-header__button {
 }
 .button {
+
 }

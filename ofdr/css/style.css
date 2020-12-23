@@ -172,9 +172,6 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 10px 0px 10px 0px;
 }
 
@@ -188,6 +185,7 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 50px;
 }
 
 .top-header__column:last-child {
@@ -200,14 +198,14 @@ body._lock {
 }
 
 .top-header__logo {
-  margin-right: 30px;
+  margin-right: 26px;
 }
 
 .top-header__logo-subtitle {
-  padding-left: 25px;
+  padding-left: 21px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   color: #5D5D5D;
   border-left: 2px solid #89AFEF;
 }
@@ -302,12 +300,48 @@ body._lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 30px;
 }
 
 .top-header__phone {
+  position: relative;
   font-size: 20px;
   font-weight: 700;
   color: #333333;
+  padding-left: 30px;
+  margin-bottom: 5px;
+}
+
+.top-header__phone:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  background: url(../img/header/call-answer.svg) center no-repeat;
+}
+
+.top-header__mail {
+  position: relative;
+  font-weight: 500;
+  font-size: 17px;
+  color: #333333;
+  padding-left: 30px;
+  margin-bottom: 5px;
+}
+
+.top-header__mail:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  background: url(../img/header/mail.svg) center no-repeat;
 }
 
 @media (max-width: 992px) {
