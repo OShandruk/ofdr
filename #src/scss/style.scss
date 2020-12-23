@@ -57,6 +57,7 @@ body {
 ._container {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
+	padding: 0 10px;
 	// @media (max-width: $md1+px) {
 	// 	max-width: 970px;
 	// }
