@@ -1,9 +1,9 @@
 // Burger button color 
 $burgerColor:#000;
 $burgerActiveColor: #fff;
-$bgMenuColor: #068292;
+$bgMenuColor: rgba(0, 0, 0, 0.8);
 
-	@media (max-width:992px){
+	@media (max-width:$md2+px){
 	body.lock{
 		overflow: hidden;
 	}

@@ -1,3 +1,5 @@
+
+  
 // Dynamic Adapt v.1
 // HTML data-da="where(uniq class name),when(breakpoint),position(digi)"
 // e.x. data-da=".item,992,2"
@@ -5,7 +7,6 @@
 // https://www.youtube.com/c/freelancerlifestyle
 
 "use strict";
-
 
 function DynamicAdapt(type) {
 	this.type = type;
