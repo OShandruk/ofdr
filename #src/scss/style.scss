@@ -80,9 +80,77 @@ body {
 @import "burger";
 @import "header";
 @import "footer";
-@import "home";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
+/*MAIN
+===============================================================*/
+
+.main {
+	background: url(../img/main/main__bg.png) center right -50% no-repeat;
+	@media (max-width:$md3+px) {
+		background: url(../img/main/main__bg.png) center right /cover no-repeat;
+	}
+}
+.main__wrap {
+	display: flex;
+	@media (max-width:$md3+px) {
+		flex-direction: column-reverse;
+		align-items: center;
+		text-align: center;
+
+	}
+}
+
+.main__column {
+	&:nth-child(1) {
+		flex: 0 1 60%; 
+	}
+}
+.main__title {
+	margin-top: 39px;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 51px;
+	margin-bottom: 78px;
+	@media (max-width:400px) {
+		font-size: 34px;
+		line-height: 44px;
+	}
+}
+.main__subtitle {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 48px;
+	span {
+		font-weight: 800;
+	}
+}
+.main__btn {
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px 65px 15px 65px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #FFFFFF;
+	background:linear-gradient(90deg, #87AFF1 0%, #6C80CB 100%, #6C80CB 100%);
+	box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+	border-radius: 3px;
+	transition: all 0.3s ease;
+	&:hover {
+		box-shadow: none;
+
+	}
+
+}
+.button {
+}
+
+
+
+
+/*====================================================================*/

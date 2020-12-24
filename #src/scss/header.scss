@@ -168,9 +168,12 @@
 	font-size: 18px;
 	padding: 10px 26px 10px 26px;
 	background: linear-gradient(90deg, #F6BD60 0%, #E88952 100%);
+	box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
+	border-radius: 3px;
 	transition: all 0.3s ease;
 	&:hover {
 		background: linear-gradient(90deg, #f3b34b 0%, #e67838 100%);
+		box-shadow:none;
 	}
 }
 .header__content {
