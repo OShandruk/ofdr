@@ -732,14 +732,59 @@ da.init();
 
 //***********************************************  SWIPER **************************
 var swiper = new Swiper('.programs__slider', {
-	autoHeight: true,
-	slidesPerView: 4,
-	spaceBetween: 30,
+	slidesPerView: 1,
+	spaceBetween: 5,
 	pagination: {
 	  el: '.swiper-pagination',
 	  clickable: true,
 	},
 	loop: true,
+	 // Responsive breakpoints
+	 breakpoints: {
+		// when window width is >= 320px
+		560: {
+		  slidesPerView: 2,
+		  spaceBetween: 5,
+		},
+		// when window width is >= 480px
+		768: {
+		  slidesPerView: 3,
+		  spaceBetween: 30,
+		},
+		// when window width is >= 640px
+		1071: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		}
+	 }
+ });
+
+ var newswiper = new Swiper('.certificate__slider', {
+	slidesPerView: 1,
+	spaceBetween: 5,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+	loop: true,
+	 // Responsive breakpoints
+	 breakpoints: {
+		// when window width is >= 320px
+		560: {
+		  slidesPerView: 2,
+		  spaceBetween: 5
+		},
+		// when window width is >= 480px
+		768: {
+		  slidesPerView: 3,
+		  spaceBetween: 40,
+		},
+		// when window width is >= 640px
+		1071: {
+			slidesPerView: 4,
+			spaceBetween: 40,
+		}
+	}
  });
 
 // *****************************************************************************************
