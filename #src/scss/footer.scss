@@ -1,5 +1,67 @@
-footer{}
-//====================================================================================================
+/*FOOTER
+=====================================================*/
+.footer {
+   background-color: #333333;
+   padding: 50px 0px 50px;
+}
 
-//====================================================================================================
+.footer__row {
+   display: flex;
+   justify-content: space-between;
+}
+.footer__column {
+   &:last-child {
+      flex: 0 1 20%;
+   }
+}
+.footer__column-title {
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 27px;
+   color: #FFFFFF;
+   margin-bottom: 27px;
+   text-align: left;
+}
+.footer__column-list {
+   text-align: left;
+   li {
+      margin-bottom: 15px;
+   }
+}
+.footer__column-link {
+   position: relative;
+   color: #fff;
+   font-size: 14px;
+   line-height: 14px;
+   &:hover  {
+      text-decoration: underline;
+   }
+}
+.footer__telegram-link {
+   &:before {
+      content:
+   }
+}
+.footer__viber-link {
+}
+.footer__whatsapp-link {
+}
+.footer__tel-link {
+
+}
+.footer__mail-link {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*========================================================*/
 
