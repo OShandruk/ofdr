@@ -209,8 +209,9 @@ section {
 
 }
 .documents__footer {
+	
 	background-color: #F6F6F6;
-	padding-top: 20px;
+	padding-top: 50px;
 }
 .document__item__img-wrap  {
 	position: relative;
@@ -456,6 +457,9 @@ section {
 =====================================================================*/
 .breadcrumb-list {
 	display: flex;
+	@media (max-width:$md4+px) {
+		display: none;
+	}
 	li {
 		position: relative;
 		margin-right: 20px;
@@ -489,20 +493,34 @@ section {
 }
 .certificat {
 	.cert__row {
-		background: #FAFAFB url(../img/certificate/cert__bg.png) right  no-repeat;
+		background: #FAFAFB url(../img/certificate/cert__bg.png) right /contain  no-repeat;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 40px 50px 40px 50px;
+	@media (max-width:$md2+px){
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media (max-width:$md3+px){
+		flex-direction: column-reverse;
+		align-items: center;
+		background: #FAFAFB !important;
+		padding: 40px 10px 40px 10px;
+	}
 	}
 	.cert__column {
 		&:nth-child(2) {
 			flex: 0 1 40%;
+			@media (max-width:$md4+px) {
+				flex: 0 1 100%;
+			}
 		}
 		&:nth-child(1) {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			margin-right: 20px;
 		}
 	}
 	.cert__cost-title {
@@ -547,12 +565,29 @@ section {
 		font-weight: 800;
 		font-size: 40px;
 		line-height: 51px;
+		
 		margin-bottom: 30px;
+		@media (max-width:$md3+px) {
+			text-align: center;
+			margin-top: 20px;
+		}
+		@media (max-width:$md4+px) {
+			font-size: 30px;
+			line-height: 41px;
+		}
+		@media (max-width:345px) {
+			font-size: 25px;
+			line-height: 35px;
+		}
 	}
 	.column-text {
 		font-weight: 500;
 		font-size: 17px;
 		line-height: 26px;
+		@media (max-width:$md3+px) {
+			text-align: center;
+			margin-bottom: 30px;
+		}
 	}
 	.cert__img {
 	}

@@ -1458,7 +1458,7 @@ button.swiper-pagination-bullet {
 
 .documents__footer {
   background-color: #F6F6F6;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .document__item__img-wrap {
@@ -1772,7 +1772,7 @@ button.swiper-pagination-bullet {
 }
 
 ._no-webp .certificat .cert__row {
-  background: #FAFAFB url(../img/certificate/cert__bg.png) right no-repeat; }
+  background: #FAFAFB url(../img/certificate/cert__bg.png) right/contain no-repeat; }
 
 .certificat .cert__row {
   display: -webkit-box;
@@ -1804,6 +1804,7 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 20px;
 }
 
 .certificat .cert__cost-title {
@@ -2028,6 +2029,14 @@ button.swiper-pagination-bullet {
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
   }
+
+  .certificat .cert__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 824px) {
@@ -2094,6 +2103,28 @@ button.swiper-pagination-bullet {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
   }
+
+  .certificat .cert__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #FAFAFB !important;
+    padding: 40px 10px 40px 10px;
+  }
+
+  .certificat .cert__column-title {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .certificat .column-text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 655px) {
@@ -2125,6 +2156,23 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 479.98px) {
+  .breadcrumb-list {
+    display: none;
+  }
+
+  .certificat .cert__column:nth-child(2) {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .certificat .cert__column-title {
+    font-size: 30px;
+    line-height: 41px;
+  }
+}
+
 @media (max-width: 441px) {
   .top-header__contact {
     margin-top: 30px;
@@ -2149,11 +2197,18 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 345px) {
+  .certificat .cert__column-title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
 ._webp .main { background: url(../img/main/main__bg.webp) center right -50% no-repeat; }
 
 ._webp .actions { background: url(../img/news/action__bg.webp) right no-repeat; }
 
-._webp .certificat .cert__row { background: #FAFAFB url(../img/certificate/cert__bg.webp) right no-repeat; }
+._webp .certificat .cert__row { background: #FAFAFB url(../img/certificate/cert__bg.webp) right/contain no-repeat; }
 
 @media (max-width: 767.98px) {
 
