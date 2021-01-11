@@ -1971,6 +1971,10 @@ button.swiper-pagination-bullet {
 /*NEWS
 ===========================================================================*/
 
+.section__news-title {
+  text-align: left;
+}
+
 .news-page__wrap {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -698,9 +698,13 @@ section {
 
 /*NEWS
 ===========================================================================*/
+.section__news-title {
+	text-align: left;
+}
 .news-page__wrap {
 	display: flex;
 	flex-wrap: wrap;
+	
 	.news__column { 
 		flex: 0 1 25%;
 		margin-bottom: 30px;

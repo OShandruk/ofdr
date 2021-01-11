@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Contact"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<!--==========================CERTIFICAT=============================================-->
+			<div class="breadcrumb">
+				<div class="_container">
+					<ul class="breadcrumb-list">
+						<li class="breadcrumb-item"><a href="#" class="breadcrumb__link">Главная</a></li>
+						<li class="breadcrumb-item"><a href="#" class="breadcrumb__link active">Контакти</a></li>
+					 </ul>
+				</div>
+				
+         </div>
+         
+        <section class="contact">
+           <div class="_container">
+              <div class="contact__column">
+               <div class="contact__title ">Новости</div>
+               <div class="contact__subtitle">Мы работаем по всей России</div>
+               <a href="tel:+388000000000" class="top-header__phone contact_phone">8 800 000-00-00</a>
+               <a href="mailto:email@email.com" class="top-header__mail contact__mail">email@email.com</a>
+               
+               <ul class="top-header__social-list contact__social-list">
+                  <li><a href="#" class="top-header__social-link whatsap__link"></a></li>
+                  <li><a href="#" class="top-header__social-link viber__link"></a></li>
+                  <li><a href="#" class="top-header__social-link telegram__link"></a></li>
+               </ul>
+              </div>
+
+           </div>
+        </section>
+			
+			
+			@@include('_footer.html',{})
+		</div>
+		@@include('_js.html',{})
+	</body>
+</html>
