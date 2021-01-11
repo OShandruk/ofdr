@@ -693,3 +693,90 @@ section {
 
 
 /*========================================================================*/
+
+
+
+/*NEWS
+===========================================================================*/
+.news-page__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	.news__column { 
+		flex: 0 1 25%;
+		margin-bottom: 30px;
+		display: flex;
+		@media (max-width:$md2+px) {
+			flex: 0 1 50%;
+		}
+		@media (max-width:$md3+px) {
+			flex: 0 1 100%;
+		}
+	}
+	.news__item {
+		text-align: left;
+
+	}
+	.news__item-link {
+		display: block;
+		font-weight: 700;
+		font-size: 19px;
+		margin-bottom: 15px;
+		color: #333333;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+
+
+	
+}
+.news__pagination {
+	display: flex;
+	justify-content: center;
+}
+.news__pagination-item {
+	margin-right: 5px;
+	&:last-child {
+		margin-right: 0;
+	}
+
+	
+
+	.news__pagination-link {
+		display: inline-block;
+		position: relative;
+		width: 28px;
+		height: 28px;
+		border: 2px solid #D0D0D0;
+		transition: all 0.3s ease;
+		&:hover {
+			border-color: #87B0EE;
+		}
+		&:hover span {
+			color: #87B0EE;
+		}
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+			font-weight: 700;
+			font-size: 14px;
+			color: #CFCFCF;
+	
+		}
+		
+	}
+
+	.active {
+		border-color: #87B0EE;
+		span {
+			color: #87B0EE;
+		}
+	}
+}
+
+/*==============================================================================*/
