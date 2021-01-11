@@ -482,8 +482,12 @@ section {
 		font-weight: 500;
 		font-size: 15px;
 		line-height: 18px;
-		text-decoration-line: underline;
+		
 		color:#86AFEF;
+		transition: all 0.3s ease;
+		&:hover {
+			text-decoration: underline;
+		}
 		
 
 	}
@@ -555,6 +559,9 @@ section {
 		margin-top: 40px;
 		background: linear-gradient(90deg, #87AFF1 0%, #6C80CB 100%);
 		box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+		padding: 15px 50px 15px 50px;
+		font-size: 16px;
+		text-transform: uppercase;
 		transition: all 0.3s ease;
 		&:hover {
 			box-shadow: none;
@@ -592,9 +599,57 @@ section {
 	.cert__img {
 	}
 }
-
-
-
-
-
 /*=====================================================================*/
+/*CERTIFICATIN TEXT
+=====================================================================*/
+.cert__text {
+	padding: 20px 0px 20px 0px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+}
+._container {
+}
+.cert__paragraph {
+	padding-bottom: 30px;
+	
+}
+.cert__text-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	padding-bottom: 20px;
+}
+.cert__text-list-title {
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 24px;
+	padding-bottom: 20px;
+}
+.cert__text-list {
+	padding-left: 55px;
+	@media (max-width:$md4+px) {
+		padding-left: 0;
+	}
+}
+.cert__text-list-item {
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 10px;
+	&:before {
+		content:'';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translate(0%, -50%);
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		background-color: #87B0EE;
+
+	}
+}
+
+
+/*========================================================================*/
