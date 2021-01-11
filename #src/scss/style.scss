@@ -497,6 +497,7 @@ section {
 }
 .certificat {
 	.cert__row {
+		position: relative;
 		background: #FAFAFB url(../img/certificate/cert__bg.png) right /contain  no-repeat;
 		display: flex;
 		justify-content: space-between;
@@ -512,6 +513,45 @@ section {
 		background: #FAFAFB !important;
 		padding: 40px 10px 40px 10px;
 	}
+
+	.paralax__figure {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		z-index: 1;
+
+		.layer__pos-1 {
+			position: absolute;
+			top: 27px;
+			right: 437px;
+		}
+		.layer__pos-2 {
+			position: absolute;
+			top: 70px;
+			right: 396px;
+		}
+		.layer__pos-3 {
+			position: absolute;
+			top: 50px;
+			right: 346px;
+		}
+
+		.layer__pos-4 {
+			position: absolute;
+			bottom: 55px;
+			right: 501px;
+		}
+		.layer__pos-5 {
+			position: absolute;
+			bottom: 42px;
+			right: 570px;
+		}
+		.layer {
+			
+		}
+	}
+
 	}
 	.cert__column {
 		&:nth-child(2) {

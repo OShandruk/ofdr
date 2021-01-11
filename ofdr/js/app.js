@@ -730,6 +730,26 @@ da.init();
 // 	_slideToggle(categoriesSearch);
 // });
 
+//************************** */ MAUSE PARALLAX*****************************************************
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+	this.querySelectorAll('.layer').forEach(layer => {
+		const speed = layer.getAttribute('data-speed')
+
+		const x = (window.innerWidth - e.pageX*speed)/100
+		const y = (window.innerHeight - e.pageY*speed)/100
+		console.log(x);
+		console.log(y);
+
+		layer.style.transform = "translateX("+ x + "px) translateY(" + y + "px)";
+	})
+}
+
+
+
+
+// *********************************************************************************************************
+
 //***********************************************  SWIPER **************************
 var swiper = new Swiper('.programs__slider', {
 	slidesPerView: 1,
@@ -930,14 +950,14 @@ jQuery(document).ready(function ($) {
 // ************************************************************
 
 //*****************MENU NAVIGATION***********************
-jQuery(document).ready(function ($) {
-	$("#menu").on("click", "a", function (event) {
-		event.preventDefault();
-		var id = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({ scrollTop: top - 70 }, 1200);
-	});
-});
+// jQuery(document).ready(function ($) {
+// 	$("#menu").on("click", "a", function (event) {
+// 		event.preventDefault();
+// 		var id = $(this).attr('href'),
+// 			top = $(id).offset().top;
+// 		$('body,html').animate({ scrollTop: top - 70 }, 1200);
+// 	});
+// });
 //***************** END MENU NAVIGATION***********************
 
 
