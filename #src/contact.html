@@ -19,18 +19,50 @@
          
         <section class="contact">
            <div class="_container">
-              <div class="contact__column">
-               <div class="contact__title ">Новости</div>
-               <div class="contact__subtitle">Мы работаем по всей России</div>
-               <a href="tel:+388000000000" class="top-header__phone contact_phone">8 800 000-00-00</a>
-               <a href="mailto:email@email.com" class="top-header__mail contact__mail">email@email.com</a>
-               
-               <ul class="top-header__social-list contact__social-list">
-                  <li><a href="#" class="top-header__social-link whatsap__link"></a></li>
-                  <li><a href="#" class="top-header__social-link viber__link"></a></li>
-                  <li><a href="#" class="top-header__social-link telegram__link"></a></li>
-               </ul>
+              <div class="contact__row">
+               <div class="contact__column">
+                  <div class="contact__title ">Контакты</div>
+                  <div class="contact__column-wrap">
+                        <div class="contact__subtitle">Мы работаем по всей России</div>
+                     <a href="tel:+388000000000" class="top-header__phone contact_phone">8 800 000-00-00</a>
+                     <a href="mailto:email@email.com" class="top-header__mail contact__mail">email@email.com</a>
+                     
+                     <ul class="top-header__social-list contact__social-list">
+                        <li><a href="#" class="top-header__social-link whatsap__link"></a></li>
+                        <li><a href="#" class="top-header__social-link viber__link"></a></li>
+                        <li><a href="#" class="top-header__social-link telegram__link"></a></li>
+                     </ul>
+
+                  </div>
+                  
+                  <div class="contact__qr">
+                     <div class="contact__qr-img">
+                        <img src="img/contact/qr.jpg" alt="qr-code">
+                     </div>
+                     <div class="contact__qr-text">
+                        <div class="contact__qr-title">Все наши контакты в этом QR коде</div>
+                        <div class="contact__qr-subtitle">Считать QR код Вы можете с помощью специального приложения для IOS или Android</div>
+                     </div>
+                  </div>
+                 </div>
+                 <div class="contact__column form__column">
+                    
+                    <form action="" class="contact__form">
+                     <div class="contact__form-title">Форма обратной связи</div>
+                     <input type="text" name="questions" class="contact__input" data-value="Как к Вам обращаться?">
+                     <textarea name="contact_textarea" class="contact__textarea"  cols="30" rows="10" data-value="Желаемые документы"></textarea>
+                     <input type="tel" nama="phone" class="contact__input _phone" data-value="+3 (__) __ - __ - __" >
+                     <input type="email" name="email" class="contact__input" data-value="Email">
+                     <button type="submit" class="button contact-btn">Отправить заявку</button>
+   
+                    </form>
+                 </div>
+
+
+
+
               </div>
+              
 
            </div>
         </section>
